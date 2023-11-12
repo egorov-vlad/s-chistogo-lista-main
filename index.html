@@ -8,15 +8,6 @@
     <link rel="stylesheet" href="./styles/style.css" />
   </head>
   <body>
-    <script>
-      window.addEventListener("load", () => {
-        console.log("Loading...");
-        window.scrollTo({
-          top: 4000,
-          behavior: "smooth",
-        });
-      });
-    </script>
     <header class="content-section content-section_theme_dark header">
       <nav class="header__menu">
         <a href="#" class="header__logo"
@@ -43,7 +34,9 @@
       <section class="content-section content-section_theme_dark intro">
         <div class="intro__heading">
           <p class="intro__title">8 способов борьбы со страхом чистого листа</p>
-          <time class="intro__date">05.06.2022 г.</time>
+          <div class="intro__date_section">
+            <time class="intro__date">05.06.2022</time>г.
+          </div>
         </div>
         <div>
           <p class="intro__main-text white-content">
@@ -135,7 +128,11 @@
         <div class="cards-list">
           <div class="card card_theme_dark">
             <div class="card__author">
-              <img class="card__author-photo" src="./images/polyarinov.png" />
+              <img
+                class="card__author-photo"
+                src="./images/polyarinov.png"
+                alt="Фотография Алексея Поляринова"
+              />
               <h1 class="card__author-name white-content">Алексей Поляринов</h1>
             </div>
             <div class="card__content">
@@ -171,7 +168,11 @@
           </div>
           <div class="card card_theme_dark">
             <div class="card__author">
-              <img class="card__author-photo" src="./images/bunin.png" />
+              <img
+                class="card__author-photo"
+                src="./images/bunin.png"
+                alt="Фотография Ивана Бунина"
+              />
               <h1 class="card__author-name white-content">Иван Бунин</h1>
             </div>
             <div class="card__content">

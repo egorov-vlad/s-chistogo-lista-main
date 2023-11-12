@@ -47,7 +47,11 @@ blockquote {
 }
 
 .cover {
-  padding: 0 20px;
+  padding: 7px 24px 32px 20px;
+  background-image: url("../images/cover.svg");
+  background-repeat: no-repeat;
+  background-position: right center;
+  background-size: 95% auto;
 }
 
 .intro {
@@ -113,12 +117,6 @@ blockquote {
   text-decoration-line: none;
 }
 
-.cover-title {
-  background-image: url("../images/cover.svg");
-  background-repeat: no-repeat;
-  background-position: bottom right;
-  background-size: 95% auto;
-}
 
 .accent-span {
   display: block;
@@ -148,6 +146,8 @@ blockquote {
 .intro__title {
   font-weight: 400;
   flex-shrink: 0;
+  font-size: 16px;
+  line-height: 120%; /* 19.2px */
   width: 203px;
 }
 

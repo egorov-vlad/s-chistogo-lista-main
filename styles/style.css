@@ -63,10 +63,24 @@ blockquote {
 
 .how-to {
   padding: 40px 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
 }
 
 .footer {
+  border-top: 1px solid var(--yellow-bg, #FEE42A);
   padding: 20px 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.white-content {
+  color: var(--text-light, #f5f5f5);
+}
+
+.black-content {
+  color: var(--black-bg, #131313);
 }
 
 .header__logo-image {
@@ -88,7 +102,6 @@ blockquote {
 }
 
 .header__menu-item {
-  color: var(--text-light, #f5f5f5);
   font-size: 16px;
   font-weight: 400;
   line-height: 19.2px; /* 120% */
@@ -109,7 +122,6 @@ blockquote {
 
 .accent-span {
   display: block;
-  color: #fff;
   font-family: "EB Garamond Regular";
   font-size: 72px;
   font-weight: 400;
@@ -144,7 +156,6 @@ blockquote {
 }
 
 .intro__main-text {
-  color: #f5f5f5;
   font-size: 16px;
   line-height: 135%; /* 21.6px */
   padding-top: 24px;
@@ -152,7 +163,6 @@ blockquote {
 
 .content-section__subtitle {
   display: block;
-  color: var(--black-bg, #131313);
   font-family: "EB Garamond Medium";
   font-size: 28px;
   font-style: normal;
@@ -161,23 +171,85 @@ blockquote {
 }
 
 .content-section__introduction {
-  color: var(--black-bg, #131313);
   font-size: 20px;
   line-height: 135%; /* 27px */
 }
 
-.content-section__list{
+.content-section__list {
   display: flex;
   flex-direction: column;
   gap: 16px;
   padding: 0px 20px;
 }
 
-.content-section__list-item{
+.content-section__list-item {
   font-size: 16px;
   line-height: 21.6px;
 }
 
 .content-section__list-accent {
   font-family: "Inter Bold";
+}
+
+.card {
+  border-radius: 30px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 8px;
+}
+
+.cards-list{
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.card_theme_bright {
+  background: var(--yellow-bg, #fee42a);
+}
+.card_theme_dark {
+  background: var(--gray-bg, #343434);
+}
+
+.card__author {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.card__author-photo {
+  width: 100px;
+  height: 100px;
+}
+
+.card__author-name {
+  font-size: 16px;
+  font-family: "Inter Bold";
+  line-height: 135%; /* 21.6px */
+}
+
+.card__content {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.card__title {
+  font-family: "EB Garamond Medium";
+  font-size: 22px;
+  font-weight: 500;
+  line-height: 135%;
+}
+
+.card__text {
+  font-size: 16px;
+  line-height: 135%;
+}
+
+.footer__links {
+  display: flex;
+  list-style: none;
+  gap: 16px;
 }

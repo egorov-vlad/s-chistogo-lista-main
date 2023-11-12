@@ -8,6 +8,15 @@
     <link rel="stylesheet" href="./styles/style.css" />
   </head>
   <body>
+    <script>
+      window.addEventListener("load", () => {
+        console.log("Loading...");
+        window.scrollTo({
+          top: 4000,
+          behavior: "smooth",
+        });
+      });
+    </script>
     <header class="content-section content-section_theme_dark header">
       <nav class="header__menu">
         <a href="#" class="header__logo"
@@ -16,7 +25,7 @@
             src="./images/logo.svg"
             alt="Логотип сайта Вёрстка"
         /></a>
-        <ul class="header__menu-list">
+        <ul class="header__menu-list white-content">
           <li class="header__menu-item header__menu-item_active">Главная</li>
           <li class="header__menu-item">О нас</li>
           <li class="header__menu-item">Контакты</li>
@@ -25,7 +34,7 @@
     </header>
     <main>
       <section class="content-section content-section_theme_dark cover">
-        <h1 class="cover-title">
+        <h1 class="cover-title white-content">
           <span class="accent-span">С</span
           ><span class="accent-span text-center">чистого</span
           ><span class="accent-span text-right">листа</span>
@@ -37,7 +46,7 @@
           <time class="intro__date">05.06.2022 г.</time>
         </div>
         <div>
-          <p class="intro__main-text">
+          <p class="intro__main-text white-content">
             Начинать что-то новое — тяжело и страшно. Даже если это просто
             небольшой фрагмент кода. Или текст. Например, прежде чем написать
             здесь что-то вразумительное, автор(ка) этого материала заварила чай,
@@ -46,7 +55,7 @@
             протёрла пыль на столе и заварила чай ещё раз, потому что он остыл.
             Всё это время с монитора на неё смотрел чистый лист.
           </p>
-          <p class="intro__main-text">
+          <p class="intro__main-text white-content">
             Прокрастинировать перед тем, как начать что-то делать (особенно
             что-то новое) — нормальная реакция мозга. Разберёмся, почему это
             происходит.
@@ -54,7 +63,7 @@
         </div>
       </section>
       <section class="content-section content-section_theme_bright resons">
-        <h1>
+        <h1 class="black-content">
           <span class="content-section__subtitle text-right"
             >Почему чистый лист</span
           >
@@ -70,43 +79,138 @@
 
         <ul class="content-section__list">
           <li class="content-section__list-item">
-            <span class="content-section__list-accent">Неуверенность в результате.</span> И в том, что его вообще
-            можно достичь. Ведь как можно быть уверенным, что проводишь всю
-            работу не впустую? Что доведёшь дело до конца? А тут, пока не начал,
-            не надо и заканчивать.
+            <span class="content-section__list-accent"
+              >Неуверенность в результате.</span
+            >
+            И в том, что его вообще можно достичь. Ведь как можно быть
+            уверенным, что проводишь всю работу не впустую? Что доведёшь дело до
+            конца? А тут, пока не начал, не надо и заканчивать.
           </li>
           <li class="content-section__list-item">
-            <span class="content-section__list-accent">Страх критики.</span> Если работу будет кто-то оценивать, то
-            уже на самых ранних этапах мы смотрим на неё глазами этого человека.
-            Представляем, какие недостатки в ней можно найти. После этого
-            желание что-то делать сразу пропадает.
+            <span class="content-section__list-accent">Страх критики.</span>
+            Если работу будет кто-то оценивать, то уже на самых ранних этапах мы
+            смотрим на неё глазами этого человека. Представляем, какие
+            недостатки в ней можно найти. После этого желание что-то делать
+            сразу пропадает.
           </li>
           <li class="content-section__list-item">
-            <span class="content-section__list-accent">Перфекционизм. </span>Когда кажется, что работа не будет
-            сделана идеально, будто бы нет смысла её и начинать. В такие моменты
-            мы можем забыть, что с первого раза что-то получается довольно
-            редко.
+            <span class="content-section__list-accent">Перфекционизм. </span
+            >Когда кажется, что работа не будет сделана идеально, будто бы нет
+            смысла её и начинать. В такие моменты мы можем забыть, что с первого
+            раза что-то получается довольно редко.
           </li>
           <li class="content-section__list-item">
-            <span class="content-section__list-accent">Отсутствие мотивации.</span> Как долгосрочной, так и
-            краткосрочной. Например, если дедлайн только через неделю, можно
-            посидеть пару часов, рассматривая узоры на обоях, — времени ещё
-            вагон. Или прогуливать уроки химии в школе, потому что вроде как и
-            хочется стать нейрохирургом, но в кино на «Мстителей» хочется ещё
-            больше.
+            <span class="content-section__list-accent"
+              >Отсутствие мотивации.</span
+            >
+            Как долгосрочной, так и краткосрочной. Например, если дедлайн только
+            через неделю, можно посидеть пару часов, рассматривая узоры на
+            обоях, — времени ещё вагон. Или прогуливать уроки химии в школе,
+            потому что вроде как и хочется стать нейрохирургом, но в кино на
+            «Мстителей» хочется ещё больше.
           </li>
           <li class="content-section__list-item">
-            <span class="content-section__list-accent">Недостаток информации.</span> Начинать что-то особенно сложно,
-            если вы новичок в теме и только разбираетесь, что к чему. Вам может
-            казаться, что каждая строчка — глупость, и вообще всё, что вы
-            сделаете, — будет неправильно.
+            <span class="content-section__list-accent"
+              >Недостаток информации.</span
+            >
+            Начинать что-то особенно сложно, если вы новичок в теме и только
+            разбираетесь, что к чему. Вам может казаться, что каждая строчка —
+            глупость, и вообще всё, что вы сделаете, — будет неправильно.
           </li>
         </ul>
       </section>
-      <section
-        class="content-section content-section_theme_dark how-to"
-      ></section>
+      <section class="content-section content-section_theme_dark how-to">
+        <h1>
+          <span class="content-section__subtitle text-right white-content"
+            >Как всё-таки начать</span
+          >
+          <span class="content-section__subtitle white-content"
+            >что-то делать</span
+          >
+        </h1>
+        <p class="content-section__introduction white-content">
+          Чаще всего страх чистого листа появляется не из-за чего-то одного, а
+          из-за совокупности нескольких факторов. Вот что может помочь:
+        </p>
+        <div class="cards-list">
+          <div class="card card_theme_dark">
+            <div class="card__author">
+              <img class="card__author-photo" src="./images/polyarinov.png" />
+              <h1 class="card__author-name white-content">Алексей Поляринов</h1>
+            </div>
+            <div class="card__content">
+              <h1 class="card__title white-content">Начать любыми словами</h1>
+              <p class="card__text white-content">
+                Любыми — без шуток. Если не верите нам, посмотрите, например,
+                чем открывается эссе Алексея Поляринова «Чарли Кауфман:
+                расширение пространства». Можно и менее радикально. Главное,
+                чтобы пустую страницу начали заполнять символы. Получится
+                своеобразная ловушка для мозга: он видит, что вы уже начали
+                что-то делать, и ему становится легче войти в состояние потока.
+              </p>
+            </div>
+          </div>
+          <div class="card card_theme_bright">
+            <!-- <div class="card__author">
+              <img class="card__author-photo" src="./images/polyarinov.png" />
+              <h1 class="card__author-name white-content">Алексей Поляринов</h1>
+            </div> -->
+            <div class="card__content">
+              <h1 class="card__title black-content">
+                Поставить перед собой рамку для фотографии
+              </h1>
+              <p class="card__text black-content">
+                Самую обычную: 10 на 15 сантиметров. Уже от одного ощущения, что
+                предстоит работа над большой и сложной задачей, может пропасть
+                всякое желание за неё браться. В такие моменты хорошо помогает
+                загнать задачу в рамки — в прямом смысле. Сосредоточьтесь на
+                том, чтобы заполнить только пространство 10х15 сантиметров. Что
+                дальше — пока неважно.
+              </p>
+            </div>
+          </div>
+          <div class="card card_theme_dark">
+            <div class="card__author">
+              <img class="card__author-photo" src="./images/bunin.png" />
+              <h1 class="card__author-name white-content">Иван Бунин</h1>
+            </div>
+            <div class="card__content">
+              <h1 class="card__title white-content">
+                Сделать из задачи рутину
+              </h1>
+              <p class="card__text white-content">
+                «Писать стихи нужно каждый день, подобно тому как скрипач или
+                пианист непременно должен каждый день без пропусков по нескольку
+                часов играть на своём инструменте. В противном случае ваш талант
+                неизбежно оскудеет, высохнет, подобно колодцу, откуда долгое
+                время не берут воду. А о чём писать? О чём угодно. Если у вас в
+                данное время нет никакой темы, идеи, то пишите просто обо всём,
+                что увидите», — такой совет своему приятелю дал Иван Бунин. Нет
+                повода ему не следовать.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
-    <footer class="content-section content-section_theme_dark footer"></footer>
+    <footer class="content-section content-section_theme_dark footer">
+      <p class="footer__copy white-content">© VЁRSTKA</p>
+      <ul class="footer__links">
+        <li>
+          <a
+            class="header__menu-item_active white-content"
+            href="https://vk.com/"
+            >ВК</a
+          >
+        </li>
+        <li>
+          <a
+            class="header__menu-item_active white-content"
+            href="https://youtube.com/"
+            >Ютуб</a
+          >
+        </li>
+      </ul>
+    </footer>
   </body>
 </html>
